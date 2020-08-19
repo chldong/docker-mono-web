@@ -1,6 +1,6 @@
 FROM mono:latest
 
-LABEL maintainer="Marcos Junior <junalmeida@gmail.com>"
+LABEL maintainer="崔海亮" <cuihailiang@gmail.com>"
 
 RUN apt-get update \
   && apt-get install -y \

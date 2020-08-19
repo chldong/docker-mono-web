@@ -9,4 +9,4 @@ services:
       - "80:80"
     volumes:
       - ./pools:/etc/mono/pools
-      - ./dist:/var/www/sample-app
+      - ./app:/var/www/sample-app
