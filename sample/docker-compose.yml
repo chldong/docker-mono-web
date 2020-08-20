@@ -10,3 +10,9 @@ services:
     volumes:
       - ./pools:/etc/mono/pools
       - ./app:/var/www/sample-app
+    logging:
+      driver: loki
+      options:
+        loki-url: http://loki:3100/api/prom/push"
+        loki-retries: "5"
+        loki-batch-size: "400"
